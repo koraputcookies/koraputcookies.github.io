@@ -558,8 +558,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #4d9dcb;
-			border-color: #4d9dcb;
+			background: #8C4636;   /* EARLIER 4d9dcb*/
+			border-color: #8C4636;   /* EARLIER 4d9dcb*/
 			color: white !important;
 		}
 
@@ -811,7 +811,7 @@
 
 	#cta {
 		background-attachment: scroll, scroll, scroll, fixed;
-		background-color: #4d9dcb;
+		background-color: #8C4636;   /* EARLIER 4d9dcb*/
 		background-image: 
 		background-position: top left, top right, top left, bottom center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
@@ -834,7 +834,7 @@
 
 	#banner {
 		background-attachment: scroll;
-		background-color: #4d9dcb;
+		background-color: #8C4636;   /* EARLIER 4d9dcb*/
 		background-image: 
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
