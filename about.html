@@ -45,25 +45,38 @@
 	<body class="no-sidebar">
 	
 	
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="193214364056972"
-  theme_color="#44bec7"
-  logged_in_greeting="Hi! Chat with Best of Baran!"
-  logged_out_greeting="Hi! Chat with Best of Baran!">
-</div>
-						    
+	<!-- Load Facebook SDK for JavaScript -->
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="188360442640468"
+  theme_color="#0A7CFF"
+  logged_in_greeting="Hi! Welcome to Koraput Cookies! What can we help you with today?"
+  logged_out_greeting="Hi! Welcome to Koraput Cookies! What can we help you with today?">
+      </div>
+
+
+
+	  
 						    
 			<!-- Header -->
 			<header id="header" >
@@ -270,15 +283,17 @@
 			<footer id="footer">
 			
 				<ul class="icons">
-					<li><a href="http://facebook.com/ProgramBOB" target="_blank" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="http://twitter.com/ashishnotes" target="_blank" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="https://plus.google.com/+BestofBaranOrganization"  target="_blank" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+					<li><a href="https://facebook.com/koraputcookies" target="_blank" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="http://instagram.com/koraputcookies" target="_blank" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="http://twitter.com/koraputcookies" target="_blank" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
 					
+				<!-- Removing Google plus button	<li><a href="#"  target="_blank" class="icon circle fa-google-plus"><span class="label">Instagram</span></a></li>
+					-->
 				</ul>
 				
 					
 				<ul class="copyright">
-					<li>Copyright &copy; 2014 <a href="http://bestofbaran.github.io"> Best of Baran</a></li></li>
+					<li>Copyright &copy; 2021 <a href="http://koraputcookies.com"> Koraput Cookies</a></li></li>
 
 <li>Design: <a target='_blank' href="http://html5up.net/">HTML5 UP</a></li>
 				</ul>
